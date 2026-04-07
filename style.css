@@ -1,0 +1,22 @@
+.formulario {
+  justify-items: center; 
+  align-items: center;    
+  margin: 30;
+
+}
+
+.titulo_fixado {
+  background-color:black;
+  margin: 0;
+  justify-items: center;
+  margin-top: 0px;
+  text-align: center;
+  height: 100px;
+  padding: 7px;
+  font-display:block;
+  color: aliceblue;
+}
+
+    
+
+

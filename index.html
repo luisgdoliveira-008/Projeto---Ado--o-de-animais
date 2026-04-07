@@ -1,37 +1,86 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Formulário De Adoção</title>
+    <title>Formulário De Adoção</title>   
 </head>
 
+<header>
+    <div class="titulo_fixado">
+        <h1>ADOÇÃO DE PETS 🐶</h1>
+    </div>
+</header>
+    
 <body>
-
-    <h2>Formulário de Adoção</h2>
-
-    <form id="formAdocao">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Digite seu nome">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Digite seu email">
-        <br>
-        <label for="moradia">Moradia:</label>
-        <select name="moradia" id="moradia">
-            <option value="">Selecione</option>
-            <option value="casa">Casa</option>
-            <option value="apartamento">Apartamento</option>
-        </select>
-        <br>
-        <label for="quintal">Possui Quintal?</label>
-        <input type="radio" name="quintal" value="sim">Sim
-        <input type="radio" name="quintal" value="nao">Não
-        <br>
-        <button type="submit">Enviar</button>
-    </form>
-
+    <div class="formulario">
+        <form id="formAdocao">
+              <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <br>
+            <br>
+              <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email">
+            <br>
+            <br>
+              <label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX">
+            <br>
+            <br>
+              <label for="cpf">CPF:</label>
+            <input type="cpf" id="cpf" placeholder="Digite seu CPF">
+            <br>
+            <br>
+              <label for="idade">Idade:</label>
+            <input type="idade" id="idade" placeholder="EX: 20">
+            <br>
+            <br>
+              <label for="cidade">Cidade:</label>
+                <select name="cidade" id="cidade">
+                    <option value="">Selecione</option>
+                    <option value="joinville">Joinville</option>
+                    <option value="jaragua">jaraguá</option>
+                    <option value="sao_bento">São Bento do Sul</option>
+                </select>
+            <br>
+            <br>
+              <label for="moradia">Moradia:</label>
+                <select name="moradia" id="moradia">
+                    <option value="">Selecione</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                </select>
+            <br>
+            <br>
+              <label for="quintal">Possui Quintal?</label>
+            <input type="radio" name="quintal" value="sim">Sim
+            <input type="radio" name="quintal" value="nao">Não
+            <br>
+            <br>
+              <label for="quintal">Já teve pet antes?</label>
+            <input type="radio" name="pet" value="sim">Sim
+            <input type="radio" name="pet" value="nao">Não
+            <br>
+            <br>
+              <label for="horas">Quantas horas o animal ficará sozinho por dia?</label>
+            <br>
+            <input type="radio" name="horas" value="maisCinco">+ de 5 horas
+            <input type="radio" name="horas" value="menosCinco">- de 5 horas
+            <br>
+            <br>
+              <label for="motivo">Motivo da adoção:</label>
+            <br>
+            <textarea id="motivo" name="motivo" rows="2" cols="50"></textarea>
+            <br>
+            <br>
+              <label for="aceitar">aceite o termo de responsabilidade</label>
+            <input type="checkbox" id="aceitar" name="aceitar" value="aceitarTermos">
+            <br>
+            <br>
+            <center><button type="submit">Enviar</button></center>
+        </form>
+    </div>
     <div id="resultado"></div>
 
     <script src="scripts/script.js"></script>
