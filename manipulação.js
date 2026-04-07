@@ -23,9 +23,14 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
   return alert("Email invalido (não contem @)");
 }
 
-  if(telefone.length < 8) return alert("Nome Inválido");
+  if(telefone.length >= 8){
+    console.log("telefone Ok");
+  } else {
+    return alert("Telefone Inválido");
+  }
 
-  if(idade.length <= 18) return alert("idade Inválida");
+
+  if(idade.value >= 18) return alert("idade Inválida");
 
   cpf.required = true;
   cidade.required = true;
@@ -39,6 +44,8 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     return alert('Você precisa aceitar o Termo de Responsabilidade para continuar.');
   }
 
+  if(pet)
+
+
   document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
 });
-
