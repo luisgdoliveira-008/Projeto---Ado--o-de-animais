@@ -23,3 +23,9 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
 
   document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
 });
+
+ if (email.includes("@")) {
+  console.log("email Ok");
+} else {
+  return alert("Email invalido (não contem @)");
+}
