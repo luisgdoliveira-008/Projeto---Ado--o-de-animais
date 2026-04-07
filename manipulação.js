@@ -15,17 +15,30 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
   let aceitar= document.querySelector('input[name="aceitar"]:checked');
 
 
-
-
-
-
   if(nome.length < 3) return alert("Nome Inválido");
 
-  document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
-});
-
- if (email.includes("@")) {
+  if (email.includes("@")) {
   console.log("email Ok");
 } else {
   return alert("Email invalido (não contem @)");
 }
+
+  if(telefone.length < 8) return alert("Nome Inválido");
+
+  if(idade.length <= 18) return alert("idade Inválida");
+
+  cpf.required = true;
+  cidade.required = true;
+  moradia.required = true;
+  quintal.required = true;
+  pet.required = true;
+
+  if(motivo.length < 10) return alert("Motivo insufuciente (minímo: 10 caracteres");
+
+  if(!checkbox.checked){
+    return alert('Você precisa aceitar o Termo de Responsabilidade para continuar.');
+  }
+
+  document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
+});
+
