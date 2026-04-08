@@ -32,12 +32,6 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
 
   if(idade.value >= 18) return alert("idade Inválida");
 
-  cpf.required = true;
-  cidade.required = true;
-  moradia.required = true;
-  quintal.required = true;
-  pet.required = true;
-
   if(motivo.length < 10) return alert("Motivo insufuciente (minímo: 10 caracteres");
 
   if(!checkbox.checked){

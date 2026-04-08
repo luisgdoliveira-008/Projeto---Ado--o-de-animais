@@ -16,27 +16,34 @@
 <body>
     <div class="formulario">
         <form id="formAdocao">
-              <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome">
             <br>
             <br>
-              <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Digite seu email">
+            <br>
+              <center><h3>RESPONDA O FORMULÁRIO</h3>
             <br>
             <br>
-              <label for="telefone">Telefone:</label>
-            <input type="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX">
+            <br>
+              <center><label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
             <br>
             <br>
-              <label for="cpf">CPF:</label>
-            <input type="cpf" id="cpf" placeholder="Digite seu CPF">
+              <center><label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
             <br>
             <br>
-              <label for="idade">Idade:</label>
-            <input type="idade" id="idade" placeholder="EX: 20">
+              <center><label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
             <br>
             <br>
-              <label for="cidade">Cidade:</label>
+              <center><label for="cpf">CPF:</label>
+            <input type="cpf" id="cpf" placeholder="Digite seu CPF" required>
+            <br>
+            <br>
+              <center><label for="idade">Idade:</label>
+            <input type="idade" id="idade" placeholder="EX: 20" required>
+            <br>
+            <br>
+              <center><label for="cidade">Cidade:</label>
                 <select name="cidade" id="cidade">
                     <option value="">Selecione</option>
                     <option value="joinville">Joinville</option>
@@ -45,7 +52,7 @@
                 </select>
             <br>
             <br>
-              <label for="moradia">Moradia:</label>
+              <center><label for="moradia">Moradia:</label>
                 <select name="moradia" id="moradia">
                     <option value="">Selecione</option>
                     <option value="casa">Casa</option>
@@ -53,32 +60,32 @@
                 </select>
             <br>
             <br>
-              <label for="quintal">Possui Quintal?</label>
-            <input type="radio" name="quintal" value="sim">Sim
+              <center><label for="quintal">Possui Quintal?</label>
+            <input type="radio" name="quintal" value="sim">Sim 
             <input type="radio" name="quintal" value="nao">Não
             <br>
             <br>
-              <label for="pet">Já teve pet antes?</label>
+              <center><label for="pet">Já teve pet antes?</label>
             <input type="radio" name="pet" value="sim">Sim
             <input type="radio" name="pet" value="nao">Não
             <br>
             <br>
-              <label for="horas">Quantas horas o animal ficará sozinho por dia?</label>
+              <center><label for="horas">Quantas horas o animal ficará sozinho por dia?</label>
             <br>
             <input type="radio" name="horas" value="nao">+ de 8 horas
             <input type="radio" name="horas" value="sim">- de 8 horas
             <br>
             <br>
-              <label for="motivo">Motivo da adoção:</label>
+              <center><label for="motivo">Motivo da adoção:</label>
             <br>
-            <textarea id="motivo" name="motivo" rows="2" cols="50"></textarea>
-            <br>
-            <br>
-              <label for="aceitar">aceite o termo de responsabilidade</label>
-            <input type="checkbox" id="aceitar" name="aceitar" value="aceitarTermos">
+            <textarea id="motivo" name="motivo" rows="2" cols="50" required></textarea>
             <br>
             <br>
-                                                            <center><button type="submit">Enviar</button></center>
+              <center><label for="aceitar">aceite o termo de responsabilidade</label>
+            <input type="checkbox" id="aceitar" name="aceitar" value="aceitarTermos" required>
+            <br>
+            <br>
+            <center><button type="submit">Enviar</button></center>
         </form>
     </div>
     <div id="resultado"></div>
