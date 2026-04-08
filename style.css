@@ -1,3 +1,8 @@
+
+body {
+  background-image: url(https://images.tcdn.com.br/img/img_prod/620948/papel_de_parede_adesivo_patinhas_de_cachorro_em_azu_e_branco_pet_ssan_035_1897_1_333b4fd02f3865428801962f5acbb72f.jpg);
+
+}
 .formulario {
   justify-items: center; 
   align-items: center;    
@@ -6,7 +11,7 @@
 }
 
 .titulo_fixado {
-  background-color:black;
+  background-color:rgb(255, 255, 255);
   margin: 0;
   justify-items: center;
   margin-top: 0px;
@@ -14,12 +19,12 @@
   height: 100px;
   padding: 7px;
   font-display:block;
-  color: aliceblue;
+  color: rgb(14, 111, 196);
 }
 
 button {
     
-background-color:goldenrod;
+background-color:rgb(241, 221, 34);
 width: 100px;
 height: 50px;
 border-radius: 50px;
@@ -27,12 +32,32 @@ transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 form {
-  background-color: chocolate;
+  background-color: rgb(30, 155, 228);
   border-radius: 40px;
   height: 800px;
   width: 800px;
-
 }
-    
+  
+img {
+  width:"100px";
+  height:"100px";
+}
+
+nav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+
+#icon{
+  width: 100px;
+}
+
+#cachorro{
+    position: fixed;
+    left: 100px;
+    bottom: -5px;
+    width: 200px;
+}
 
 
